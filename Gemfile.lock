@@ -196,6 +196,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   figaro
+  globalid (= 0.3.3)
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.2)
