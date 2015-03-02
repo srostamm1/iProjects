@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://code.stripe.com'
 ruby "2.1.5"
 
 gem 'rails', '4.2.0'
