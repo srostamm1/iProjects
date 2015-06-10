@@ -16,7 +16,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem 'figaro'
 gem 'devise'
 gem 'globalid', '0.3.3'
-gem 'stripe'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'will_paginate', '~> 3.0.6'
 group :production do
 	gem 'pg'
