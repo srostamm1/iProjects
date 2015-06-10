@@ -34,6 +34,7 @@ class ListingsController < ApplicationController
     @listing.user_id = current_user.id
      # this command is going set the user id to this listing to current id of the user ++
     if current_user.recipient.blank?
+      require "stripe"
       Stripe.api_key = ENV["STRIPE_API_KEY"]
       token = params[:stripeToken]
 
