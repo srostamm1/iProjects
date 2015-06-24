@@ -21,7 +21,7 @@ class ListingsController < ApplicationController
 
   # GET /listings/new
   def new
-    @listing = Listing.new.where(user:current_user)
+    @listing = Listing.new
   end
 
   # GET /listings/1/edit
@@ -31,8 +31,8 @@ class ListingsController < ApplicationController
   # POST /listings
   # POST /listings.json
   def create
-    @listing = Listing.new(listing_params)
-    @listing.user_id = current_user.id
+    @listings = Listing.new(listing_params)
+    @listings.user_id = current_user.id
      # this command is going set the user id to this listing to current id of the user ++
     if current_user.recipient.blank?
       require "stripe"
